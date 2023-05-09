@@ -20,7 +20,7 @@ public class Esercizio2 {
         Random rand = new Random();
         List<Integer> lista = new ArrayList<>();
         for (int i = 0; i < n; i++) {
-            lista.add(rand.nextInt(101)); // Numeri da 0 a 100 inclusi
+            lista.add(rand.nextInt(101)); // Numeri da 0 a 100 INCLUSI!
         }
         Collections.sort(lista); 
         return lista;
@@ -35,7 +35,7 @@ public class Esercizio2 {
 
     public static void stampaPosizioni(List<Integer> lista, boolean pari) {
         System.out.print(pari ? "Posizioni pari: " : "Posizioni dispari: ");
-        for (int i = pari ? 0 : 1; i < lista.size(); i += 2) {
+        for (int i = pari ? 0 : 1; i < lista.size(); i += 2) { 
             System.out.print(lista.get(i) + " ");
         }
         System.out.println();
